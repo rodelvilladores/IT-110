@@ -21,20 +21,27 @@
 
   <hr>
 
-  <h2 id="images">Our Dishes</h2>
+  <h2 id="images">Images</h2>
 
   <table>
     <tr>
       <td>
+        <figure>
         <img src="burger.jpg" alt="A juicy cheeseburger with lettuce and tomato" width="300" height="300">
+        <figcaption>Our classic supreme-style burger topped with crispy bacon<br> — fresh from the griddle.</figcaption>
+        </figure>
       </td>
       <td>
         <figure>
           <img src="pzz.webp" alt="A hot pepperoni pizza on a wooden board" width="300" height="300">
+          <figcaption>Our classic supreme-style pizza topped with cheese<br> — fresh from the oven.</figcaption>
         </figure>
       </td>
       <td>
+        <figure>
         <img src="cake.avif" alt="A slice of chocolate cake with cream" width="300" height="300">
+        <figcaption>Our classic supreme-style cake topped with chocolate ganache<br> — fresh from the kitchen.</figcaption>
+        </figure>
       </td>
     </tr>
   </table>
@@ -84,7 +91,7 @@
 
   <hr>
 
-  <h2 id="hyperlinks">More From Us</h2>
+  <h2 id="hyperlinks">Connect With Us</h2>
 
   <ul>
     <li>See our full story at <a href="https://www.deliciousbites.com" target="_blank">deliciousbites.com</a></li>
@@ -95,14 +102,14 @@
 
   <hr>
 
-  <h2 id="multimedia">Inside Our Kitchen</h2>
+  <h2 id="multimedia">Multimedia</h2>
 
   <table>
     <tr>
       <td valign="top">
         <h3>Listen to the sizzle</h3>
         <audio controls>
-          <source src="cooking_sound.wav" type="audio/mpeg">
+          <source src="cooking_sound.wav" type="audio/wav">
           Your browser does not support the audio element.
         </audio>
       </td>
@@ -118,16 +125,20 @@
 
   <hr>
 
-  <h2 id="useful-tags">Good to Know</h2>
+  <h2 id="Useful Tags">Today's Specials</h2>
 
+  <!-- I used <mark> to highlight our best selling dish so customers notice it immediately -->
   <p>Our best seller this week is the <mark>Cheeseburger</mark>.</p>
 
+  <!-- I used <abbr> to shorten "Gluten-Free" and show its full meaning when the user hovers over it -->
   <p>All our food is <abbr title="Gluten-Free">GF</abbr> on request.</p>
 
+  <!-- I used <blockquote> to visually separate a real customer review from the rest of the menu text -->
   <blockquote>
     "The pizza here is amazing!" — Happy Customer
   </blockquote>
 
+  <!-- I used <small> for the fine print small "c" copyright notice since it is less important than the main content -->
   <p><small>&copy; 2026 Delicious Bites</small></p>
 
   <hr>
@@ -135,7 +146,7 @@
   <table width="100%">
     <tr>
       <td valign="top" width="50%">
-        <h2 id="dom">Menu Items</h2>
+        <h2 id="dom">Explore Our Menu</h2>
         <div id="menu-list">
           <p>Here are our menu items:</p>
           <ul>
@@ -159,6 +170,18 @@
       </td>
     </tr>
   </table>
+
+  <!--
+  In the DOM tree, elements are organized like a family tree. 
+  The <body> element acts as the parent of all the main sections on the page, 
+  including the <h1> and every <h2> heading. 
+  Inside the HTML section, the <div> with the id `menu-list` is the parent of both the <p> element 
+  and the <ul> element. 
+  The <ul> is itself the parent of the three <li> elements, 
+  making each list item a child of that unordered list. 
+  This creates a clear parent-child chain — body → div → ul → li — 
+  which is exactly how the browser organizes and displays the page structure.
+  -->
 
 </body>
 </html>
